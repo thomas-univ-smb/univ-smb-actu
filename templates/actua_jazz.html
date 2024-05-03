@@ -1,3 +1,49 @@
 {% extends 'template.html' %}
 {% block title %} - Actualités Jazz{% endblock %}
-{% block content %}Actualités Jazz{% endblock %}
+{% block content %}
+<div style="margin-left:2em">
+<button type="button" class="btn btn-success">Actualités</button>
+</div>
+<br>
+<div style="margin-left:4em">
+    <div class="row justify-content-evenly">
+    <div class="d-grid gap-2 d-md-block">
+        <a type="button" class="btn btn-outline-primary" href="/actua_jazz">Jazz</a>
+        <a type="button" class="btn btn-outline-secondary" href="/actua_rock" >Rock</a>
+        <a type="button" class="btn btn-outline-secondary" href="/actua_electro">Electro</a>
+    </div>
+    </div>
+</div>
+<br>
+<table class="table table-striped">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Genre de musique</th>
+        <th scope="col">Nom de l'évenement</th>
+        <th scope="col">Date de l'évenement</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for value in summary %}
+    {% if value['type'] == "jazz" %}
+      <tr>
+           <td> {{ value['type'] }} </td>
+           <td> {{ value['nom'] }} </td>
+           <td> {{ value['date'] }} </td> 
+      </tr>
+    {% endif %}    
+    {%  endfor %}
+    </tbody>
+  </table>
+<br>
+<button type="button" class="btn btn-success">Commentaires</button>
+<br>
+0 Commentaire
+<br>
+<div class="input-group">
+    <input type="text" id="name" name="name" size="10" value="Nom" />
+    <input type="text" id="commentaire" name="commentaire" size="75" value="Mon commentaire" />
+    <button type="button" class="btn btn-light">Envoyer</button>
+</div>
+{% endblock %}
