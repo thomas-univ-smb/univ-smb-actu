@@ -1,3 +1,6 @@
 [{"type": "jazz", "nom": "concert de jazz", "date": "01-01-2024"},
 {"type": "rock", "nom": "concert de rock", "date": "02-02-2024"},
-{"type": "electro", "nom": "concert d'electro", "date": "03-03-2024"}]
+{"type": "electro", "nom": "concert d'electro", "date": "03-03-2024"},
+{"type": "jazz", "nom": "sam session jazz", "date": "04-04-2024"},
+{"type": "rock", "nom": "festival de rock", "date": "05-05-2024"},
+{"type": "electro", "nom": "rencontre electro", "date": "06-06-2024"}]
