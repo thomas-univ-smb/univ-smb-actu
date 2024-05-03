@@ -1,0 +1,22 @@
+{% extends 'template.html' %}
+{% block title %} - Actualités{% endblock %}
+{% block content %}
+<button type="button" class="btn btn-success">Actualités</button>
+<div><p></p></div>
+<div class="row justify-content-evenly">
+    <div class="d-grid gap-2 d-md-block">
+    <button type="button" class="btn btn-outline-secondary">Jazz</button>
+    <button type="button" class="btn btn-outline-secondary">Rock</button>
+    <button type="button" class="btn btn-outline-secondary">Electro</button>
+    </div>
+</div>
+<div><p></p></div>
+<div><button type="button" class="btn btn-success">Commentaires</button></div>
+<div><p>0 Commentaire</p></div>
+<div class="input-group">
+    <input type="text" id="name" name="name" size="10" value="Nom" />
+    <p>O</p>
+    <input type="text" id="commentaire" name="commentaire" size="20" value="Mon commentaire" />
+    <p>O</p>
+</div>
+{% endblock %}
